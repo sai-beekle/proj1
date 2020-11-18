@@ -4,10 +4,10 @@ RUN yum install -y httpd \
   zip \
  unzip \
  tree
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page260/rock.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page261/avalon.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip rock.zip
-RUN cp -rvf rock/* .
-RUN rm -rf rock rock.zip 
+RUN unzip avalon.zip
+RUN cp -rvf avalon/* .
+RUN rm -rf avalon avalon.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
