@@ -4,10 +4,10 @@ RUN yum install -y httpd \
   zip \
  unzip \
  tree
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page260/rock.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip photogenic.zip
-RUN cp -rvf photogenic/* .
-RUN rm -rf photogenic photogenic.zip 
+RUN unzip rock.zip
+RUN cp -rvf rock/* .
+RUN rm -rf rock rock.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
